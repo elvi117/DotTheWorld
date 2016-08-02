@@ -13,6 +13,7 @@
 - (IBAction)backButton:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
+@property (strong, nonatomic) NSArray* arrayOfLevels;
 
 @end
 
@@ -31,8 +32,7 @@
 }
 
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *level = [defaults objectForKey:@"myLevelKey"];
     return [level integerValue];
@@ -40,11 +40,10 @@
 
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-AchievmentTableViewCell* cell  = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    cell.levelLabel.text = [self.arrayOfLevels objectAtIndex: indexPath.row];
+AchievmentTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    cell.levelLabel.text = [self.arrayOfLevels objectAtIndex:indexPath.row];
     return cell;
 }
 

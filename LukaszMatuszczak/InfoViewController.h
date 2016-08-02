@@ -10,7 +10,4 @@
 #import "AchievmentTableViewCell.h"
 
 @interface InfoViewController : UIViewController
-
-@property (strong, nonatomic) NSArray* arrayOfLevels;
-
 @end
