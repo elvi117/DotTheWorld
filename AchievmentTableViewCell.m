@@ -9,7 +9,6 @@
 #import "AchievmentTableViewCell.h"
 @implementation AchievmentTableViewCell
 
-<<<<<<< HEAD
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -20,6 +19,4 @@
 
 }
 
-=======
->>>>>>> AllProject
 @end
