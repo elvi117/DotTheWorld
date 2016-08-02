@@ -26,7 +26,6 @@
     
 }
 
-
 - (IBAction)backButton:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -37,8 +36,6 @@
     NSString *level = [defaults objectForKey:@"myLevelKey"];
     return [level integerValue];
 }
-
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 

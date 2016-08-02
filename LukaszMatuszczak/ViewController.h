@@ -6,15 +6,11 @@
 //
 //
 
-#import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
-#import <MapKit/MapKit.h>
-#import <CoreData/CoreData.h>
+@import UIKit;
+@import CoreLocation;
+@import MapKit;
+@import CoreData;
 @interface ViewController : UIViewController <CLLocationManagerDelegate>
-@property (strong, nonatomic) CLLocationManager *locationManager;
-@property (weak, nonatomic) IBOutlet MKMapView *myMapView;
-@property (weak, nonatomic) IBOutlet UIButton *achievementButtonOutlet;
-- (IBAction)buttonClickAction:(id)sender;
 
 @end
 
