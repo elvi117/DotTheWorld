@@ -6,9 +6,9 @@
 //
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @interface AchievmentTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
+
 
 @end
