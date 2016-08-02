@@ -6,10 +6,11 @@
 //
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 #import "AchievmentTableViewCell.h"
+
 @interface InfoViewController : UIViewController
-- (IBAction)backButton:(id)sender;
-@property (weak, nonatomic) IBOutlet UITableView *myTableView;
+
 @property (strong, nonatomic) NSArray* arrayOfLevels;
+
 @end
