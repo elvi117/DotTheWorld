@@ -7,10 +7,6 @@
 //
 
 #import "AchievmentTableViewCell.h"
-@interface AchievmentTableViewCell()
-@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
-@end
-
 @implementation AchievmentTableViewCell
 
 @end

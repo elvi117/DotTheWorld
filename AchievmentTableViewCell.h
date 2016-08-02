@@ -10,5 +10,6 @@
 
 @interface AchievmentTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
 
 @end

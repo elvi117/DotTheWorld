@@ -10,6 +10,10 @@
 
 @interface InfoViewController ()
 
+- (IBAction)backButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
+
 @end
 
 @implementation InfoViewController
@@ -17,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-     self.arrayOfLevels = [[NSArray alloc] initWithObjects:@"Stay-at-home",@"Short out",@"Family trip",@"Holidays",@"Touring",@"Traveler",@"Master of world dotted", nil];
+     self.arrayOfLevels = @[@"Stay-at-home", @"Short out", @"Family trip", @"Holidays", @"Touring", @"Traveler", @"Master of world dotted"];
     
 }
 
